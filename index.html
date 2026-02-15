@@ -2,26 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cloud Computing Presentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Cloud Computing & Web Services | Project</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Cloud Computing & Web Services</h1>
-    <p>B.Tech CSE Final Year Project</p>
-</header>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
 
-<section class="slides-container" id="slidesContainer">
-</section>
+    <header>
+        <h1>Cloud Computing & Web Services</h1>
+        <p class="subtitle"> Internal Project </p>
+    </header>
 
-<div class="controls">
-    <button onclick="prevSlide()">Previous</button>
-    <button onclick="nextSlide()">Next</button>
-</div>
+    <main class="presentation-wrapper">
+        <section class="slides-container" id="slidesContainer">
+            <div id="loader" class="loader">Loading Slides...</div>
+        </section>
 
-<script src="js/script.js"></script>
+        <div class="controls">
+            <button onclick="prevSlide()" class="btn-nav">← Previous</button>
+            <div class="slide-info">
+                <span id="slideNumber">Slide 1 of 30</span>
+            </div>
+            <button onclick="nextSlide()" class="btn-nav">Next →</button>
+        </div>
+        
+        <div class="extra-controls">
+            <button onclick="toggleFullScreen()" class="btn-secondary">Fullscreen Mode</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Cloud Project Hosted on GitHub Pages (PaaS)</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
